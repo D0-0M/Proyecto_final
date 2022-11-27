@@ -1,0 +1,66 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "17.0.3" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+			"$layoutConstraints": "hidemode 3"
+			"$columnConstraints": "[fill][355,fill]"
+			"$rowConstraints": "[95][][][][]"
+		} ) {
+			name: "MainPanel"
+			"background": new java.awt.Color( 255, 255, 153, 255 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lbImageLogin"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/Icons/user.png" )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 0 0 2 1,alignx center,growx 0"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/Icons/driver-license.png" )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 0 1"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+				"background": new java.awt.Color( 255, 255, 255, 255 )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 1 1"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/Icons/padlock.png" )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 0 2"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField2"
+				"background": new java.awt.Color( 255, 255, 255, 255 )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 1 2"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "Iniciar Sesion"
+				"background": sfield java.awt.Color darkGray
+				"font": new java.awt.Font( "Yu Gothic Medium", 1, 14 )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 0 3 2 1"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button3"
+				"text": "Salir"
+				"foreground": sfield java.awt.Color magenta
+				"enabled": false
+				"font": new java.awt.Font( "Yu Gothic UI", 1, 18 )
+				"background": sfield java.awt.Color darkGray
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 0 4 2 1"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 405, 285 )
+		} )
+	}
+}
